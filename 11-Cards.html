@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .cards {
+            display: flex;
+        }
+
+        .card {
+            width: 25%;
+            padding: 10px 20px;
+            border: 1px solid #000;
+        }
+
+        .product_pic {
+            width: 100%;
+        }
+
+        .product_pic img {
+            width: 100%;
+        }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="cards">
+        <div class="card">
+            <div class="product_pic">
+                <img src="http://www.krispykreme.com.tw/upload/Product/10-Strawberry%20Iced%20with%20Sprinkles.jpg" alt="">
+            </div>
+            <div class="product_text">
+                <h2>產品名稱 草莓糖霜甜甜圈</h2>
+                <p> NT 42 <br><br> 熱量 272Kcal<br><br>
+                產品特色:甜美草莓巧克力披覆於原味糖霜甜甜圈，佐以珍珠糖點綴於外層，ˇ多層次口感，Krispy Kreme 讓幸福融化口中！</p>
+            </div>
+        </div>        
+    </div>
+
+    <script>
+
+        var products=[{
+            product_name:'榛果焦糖脆脆甜甜圈',
+            price:'50',
+            calories:'423Kcal',
+            description:'鬆軟可口的甜甜圈外層抹上一層厚厚的Nutella能多益榛果醬，並灑上焦糖脆脆餅乾，一口咬下幸福指數破表!',
+            product_img:'http://www.krispykreme.com.tw/upload/Product/nutty%20cocoa%20ring-web.jpg',
+
+        },
+        {
+            product_name:'抹茶甜甜圈',
+            price:'42',
+            calories:'274Kcal',
+            description:'獨特抹茶巧克力，造就少見絕妙滋味，嚐一口讓味覺披上清爽禪風！',
+            product_img:'http://www.krispykreme.com.tw/upload/Product/08-Matcha%20Stripes.jpg',
+
+        },{
+            product_name:'花生糖霜甜甜圈',
+            price:'42',
+            calories:'335Kcal',
+            description:'香濃花生醬和特製糖霜厚厚覆蓋在甜甜圈表層，飾以黑巧克力線條，絕配滋味令花生迷愛不釋口！',
+            product_img:'http://www.krispykreme.com.tw/upload/Product/06-Peanut%20Butter%20Iced%20Glazed.jpg',
+        }]
+
+        var cards=document.querySelector('.cards');
+        products.forEach(function(product){
+            cards.innerHTML+=`
+
+        <div class="card">
+            <div class="product_pic">
+                <img src="${ product.product_img }" alt="">
+            </div>
+            <div class="product_text">
+                <h2>產品名稱 ${ product.product_name}</h2>
+                <p> NT ${ product.price} <br><br> 熱量 ${ product.calories}<br><br>
+                產品特色 ${ product.description} </p>
+            </div>
+       </div> `
+        });
+
+
+
+
+    </script>
+</body>
+</html>
