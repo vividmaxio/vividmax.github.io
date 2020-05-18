@@ -1,0 +1,19 @@
+#section2 {
+  width: 100%;
+  background-color: #000;
+}
+
+#section2 .content {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+#section2 .content .title {
+  width: 100%;
+}
+
+#section2 .content .title img {
+  width: 20%;
+}
+/*# sourceMappingURL=main.css.map */

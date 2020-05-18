@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>老茶淘LinHaoTe</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <!-- <link rel="stylesheet" href="./main.css"> -->
+    <link rel="stylesheet" href="./main.css">
 
 
     <style>
@@ -35,7 +35,10 @@
         .swiper-pagination-bullet{
             height: 20px;
             width: 20px;
-            background-color: rgb(192, 145, 57);
+        }
+
+        .swiper-pagination-bullet-active {
+        background-color:rgb(192, 145, 57);
         }
 
 
@@ -43,42 +46,51 @@
     </style>
 </head>
 <body>
-    <!-- <div id="section1">
-        <div class="navbar">
-            <img class="logo" src="" alt="">
-            <div class="nav_item">
-                <li>
-                    <ul>認識老茶淘</ul>
-                    <ul></ul>
-                </li>
-            </div>
-        </div> -->
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img src="./img/banner01.jpg" alt="">
-                    <h1>關於老茶淘</h1>
+    <div id="section1">
+        <div class="content">
+            <div class="navbar">
+                <img class="logo" src="" alt="">
+                <div class="nav_item">
+                    <li>
+                        
+                        <ul><a href="#section2"></a>認識老茶淘</a></ul>
+                        <ul>尋找收藏茶</ul>
+                        <ul>購買老茶品</ul>
+                        <ul>同業訂購</ul>
+                        <ul>預約品好茶</ul>
+                    </li>
                 </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        
+        </div>
+
+       <div class="banner">
+           <img src="./img/banner01.jpg" alt="">
+           <img class="arrow_01" src="./img/banner_arrow.png" alt="">
+       </div>
+
+        <div id="section2">
+            <div class="content">
+                <div class="title">
+                    <img src="./img/S1_T.svg" alt="">
+
+                </div>
+
+
+
+            </div>
         </div>
     </div>
+
+
 
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
         loop:true,
-        autoplay: {
-            disableOnInteraction: false,
-             delay: 5000,
-        },
+        // autoplay: {
+        //     disableOnInteraction: false,
+        //      delay: 9000,
+        // },
           pagination: {
             el: '.swiper-pagination',
             dynamicBullets: true,

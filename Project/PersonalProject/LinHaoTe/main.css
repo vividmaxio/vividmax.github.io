@@ -1,1 +1,51 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+#section1 .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+#section1 .banner .arrow_01 {
+  width: 30px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+          animation: ca3_fade_move_down 2s ease-in-out infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-name: ca3_fade_move_down;
+          animation-name: ca3_fade_move_down;
+}
+
+#section2 {
+  width: 100%;
+  background-color: #000;
+}
+
+#section2 .content {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+#section2 .content .title {
+  width: 100%;
+}
+
+#section2 .content .title img {
+  width: 20%;
+}
+/*# sourceMappingURL=main.css.map */

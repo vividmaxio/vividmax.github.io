@@ -1,0 +1,71 @@
+
+
+
+
+#section1 {
+    .content{
+
+        .navbar {
+            .logo {
+                &:hover {
+
+                }
+
+            }
+
+            .nav_item {
+
+                
+            }
+        }
+    }
+
+    .banner {
+        display: flex;
+        position: relative;
+        
+        .arrow_01 {
+            width: 30px;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            
+            animation: ca3_fade_move_down 2s ease-in-out infinite;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            animation-name: ca3_fade_move_down;
+            
+        }
+
+    }
+}
+
+#section2 {
+    width: 100%;
+    background-color: #000;
+    
+    .content {
+        width: 100%;
+        max-width: 1140px;
+        margin:0 auto;
+
+        .title {
+            width: 100%;
+            img {
+            width:20%;
+
+            }
+            
+        }
+    }
+}
+
+
+
+
+
