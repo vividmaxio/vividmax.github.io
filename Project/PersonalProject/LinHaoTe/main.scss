@@ -1,6 +1,4 @@
-$a {
-    text-decoration: none;
-}
+
 
 body {
     margin: 0;
@@ -31,37 +29,34 @@ html {
         
 
         .navbar {
-            display: flex;
-            margin: 0 auto;
-            // background-color: rgba(235, 235, 235,0.5);
+            position: absolute;
+            // margin: 0 auto;
 
-                            
+            li {
+                
+                display: inline-block;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 0.3em;
+                color: #eee;
+                padding: 30px 34px;
 
-                li {
-                    display: inline-block;
-                    font-size: 20px;
-                    font-weight: bold;
-                    letter-spacing: 0.15em;
-                    color: #eee;
-                    padding: 30px 34px;
+                // &:hover {
+                // }
 
-                    // &:hover {
-                    // }
-
-                    a {
-                        text-decoration: none;
-                        
-                    }
+                a {
+                    text-decoration: none;
+                    
                 }
+            }
                 
 
-                
-            
         }
     }
 
     .banner {
-        width: 100%;          
+        width: 100%;
+        
     }
 }
 

@@ -10,7 +10,6 @@ html {
 
 #section1 {
   width: 100%;
-  background-color: #8d8d8d;
 }
 
 #section1 .logo {
@@ -26,20 +25,24 @@ html {
 }
 
 #section1 .container .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: absolute;
-  top: 0;
-  margin: 0 5%;
-  background-color: rgba(235, 235, 235, 0.5);
 }
 
 #section1 .container .navbar li {
   display: inline-block;
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.3em;
   color: #eee;
   padding: 30px 34px;
+}
+
+#section1 .container .navbar li a {
+  text-decoration: none;
+}
+
+#section1 .banner {
+  width: 100%;
 }
 
 #section2 {
