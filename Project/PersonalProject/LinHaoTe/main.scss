@@ -1,53 +1,74 @@
+$a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial,"微軟正黑體";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 
 
 
 #section1 {
-    .content{
+    width: 100%;
+
+    .logo {
+        height: 77px;
+        padding: 40px 160px;
+        position: absolute;
+    }
+    
+    .container{
+        width:100%;
+        max-width: 1140px;
+        margin: 0 auto;
+        
 
         .navbar {
-            .logo {
-                &:hover {
+            display: flex;
+            margin: 0 auto;
+            // background-color: rgba(235, 235, 235,0.5);
 
+                            
+
+                li {
+                    display: inline-block;
+                    font-size: 20px;
+                    font-weight: bold;
+                    letter-spacing: 0.15em;
+                    color: #eee;
+                    padding: 30px 34px;
+
+                    // &:hover {
+                    // }
+
+                    a {
+                        text-decoration: none;
+                        
+                    }
                 }
-
-            }
-
-            .nav_item {
+                
 
                 
-            }
+            
         }
     }
 
     .banner {
-        display: flex;
-        position: relative;
-        
-        .arrow_01 {
-            width: 30px;
-            position: absolute;
-            top: 90%;
-            left: 50%;
-            
-            animation: ca3_fade_move_down 2s ease-in-out infinite;
-            animation-duration: 2s;
-            animation-timing-function: ease-in-out;
-            animation-delay: 0s;
-            animation-iteration-count: infinite;
-            animation-direction: normal;
-            animation-fill-mode: none;
-            animation-play-state: running;
-            animation-name: ca3_fade_move_down;
-            
-        }
-
+        width: 100%;          
     }
 }
 
 #section2 {
     width: 100%;
-    background-color: #000;
+    height: 500px;
+    background-color: #eee;
     
     .content {
         width: 100%;
