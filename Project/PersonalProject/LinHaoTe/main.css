@@ -22,17 +22,12 @@ html {
   position: absolute;
 }
 
-#section1 .container {
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-#section1 .container .navbar {
+#section1 .navbar {
   margin-top: 40px;
+  margin-left: 370px;
 }
 
-#section1 .container .navbar li {
+#section1 .navbar li {
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
@@ -41,7 +36,7 @@ html {
   padding: 30px 34px;
 }
 
-#section1 .container .navbar li a {
+#section1 .navbar li a {
   text-decoration: none;
   color: #fff;
 }

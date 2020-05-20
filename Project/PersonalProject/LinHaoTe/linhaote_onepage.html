@@ -139,6 +139,7 @@
             position: absolute;
             top:50%;
             left: 54%;
+            margin-left: 10px;
             z-index: 12;
             font-size: 20px;
             letter-spacing: 10px;
@@ -146,13 +147,18 @@
             writing-mode: vertical-lr;
         }
 
-        .baT01 img {
-            width:134px;
-            height: 457px;
+        .baT01 {
+            width:20vh;
+            height: 65vh;
             position: absolute;
             top:20%;
             left: 46%;
             z-index: 12;
+            background-image: url("./img/baT01.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
         }
 
         /* banner */
@@ -161,7 +167,6 @@
             width: 100%;
             height: 100vh;
             background-image: url("./img/banner01.jpg");
-
         }
 
 
@@ -173,7 +178,7 @@
 <body>
     <div id="section1">
         <img class="logo" src="./img/logo.png" alt="">
-        <div class="container">
+        
             <div class="navbar">
                
                 <ul>                        
@@ -185,7 +190,7 @@
                 </li>
                 
             </div>
-        </div>
+        
     </div>
 
 
@@ -194,11 +199,11 @@
             <div class="swiper-wrapper">
                 
                 <div class="swiper-slide">
-                    <img class="ban01" src="" alt="">
+                    <div class="ban01"></div>
+                    <div class="bantitle">
                     <div class="text_01"><span>品茶之間</span></div>
                     <div class="text_02"><span>開啟你對茶的新認知</span></div>
-                    <div class="baT01">
-                        <img src="./img/baT01.png" alt="">
+                    <div class="baT01"></div>
                     </div>                    
                 </div>
 
